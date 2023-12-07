@@ -1,0 +1,195 @@
+:root {
+    --white: white;
+    --black: black;
+
+    --primary: hsla(257, 40%, 49%, .9); /* Violet */
+    --secondary: hsl(300, 69%, 71%); /* Soft Magenta */
+    
+    --font-heading: 'Open Sans', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--primary);
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--white);
+}
+
+picture {
+    display: block;
+}
+
+picture img {
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2.8rem;
+}
+
+p {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+button {
+    all: unset;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    display: block;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    border: 1px solid var(--white);
+}
+
+/* LAYOUTS */
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0px auto;
+    width: 80%;
+}
+
+.bg {
+    width: 100%;
+    position: fixed;
+    z-index: -10;
+}
+
+.bg-desktop {
+    display: none;
+}
+
+/* PICTURES */
+
+.pic-logo {
+    width: 40%;
+    margin-top: 3.6rem;
+    margin-bottom: 4.4rem;
+}
+
+.pic-main {
+    margin-bottom: 6rem;
+}
+
+/* BUTTONS */
+
+.register-button {
+    padding: 0.8rem 7.2rem;
+    color: var(--black);
+    background: var(--white);
+    border-radius: 3.2rem;
+    color: var(--primary);
+    font-size: 1.4rem;
+    box-shadow: 4px 4px 12px -4px #000;
+    margin-bottom: 8rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-buttons .social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.4rem;
+    margin: 0 0.8rem 4rem 0;
+}
+
+.info > p {
+    margin-bottom: 2.4rem;
+}
+
+.attribution {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 2.8rem;
+}
+
+.attribution a {
+    font-size: 1.4rem;
+    color: #9fbfbd;
+}
+
+@media (min-width: 640px) {
+    main {
+        display: flex;
+        margin-top: 6rem;
+        justify-content: space-between;
+    }
+
+    /* LAYOUT */
+    
+    .app-container {
+        width: 90%;
+    }
+    .bg-mobile {
+        display: none;
+    }
+    .bg-desktop {
+        display: initial;
+        width: 90%;
+    }
+    
+    /* PICTURES*/
+    
+    .pic-logo {
+        width: 20%;
+    }
+    .pic-main {
+        width: 50%;
+        margin-bottom: 1.6rem;
+    }
+
+    /* BUTTONS */
+
+    .register-button {
+        margin: 0 0 4rem 0;
+        padding: 1.2rem 6rem;
+        font-size: 1.8rem;
+    }
+
+    .social-buttons {
+        justify-content: end;
+    }
+
+    .social-buttons > .social-btn {
+        width: 5.2rem;
+        height: 5.2rem;
+        font-size: 3.2rem;
+    }
+
+    /* MAIN INFO */
+
+    .info {
+        width: 50%;
+        padding: 8rem 6rem;
+    }
+    .info > h1 {
+        font-size: 6rem;
+        text-align: left;
+    }
+    .info > p {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+}
