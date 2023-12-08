@@ -25,10 +25,10 @@ Users should be able to:
 ### Screenshot
 
 Desktop Preview <br>
-![](./screenshot.jpg)
+![desktop-preview](image.png)
 
 Mobile Preview <br>
-![](./screenshot.jpg)
+![mobile-preview](image-1.png)
 
 ### Links
 
@@ -42,17 +42,4 @@ Mobile Preview <br>
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-
-### What I learned
-
-- A
-- B
-- C
-
-### Continued development
-
-- A
-- B
-- C
