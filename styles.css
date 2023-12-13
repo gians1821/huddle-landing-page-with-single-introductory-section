@@ -36,7 +36,7 @@ h1 {
     font-weight: 600;
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 2.8rem;
+    margin-bottom: 28px;
 }
 
 p {
@@ -56,6 +56,22 @@ button {
 }
 
 button:hover {
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+
+footer ul a {
+    all: unset;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    display: block;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    border: 1px solid var(--white);
+    cursor: pointer;
+}
+
+footer ul a:hover {
     border: 1px solid var(--secondary);
     color: var(--secondary);
 }
@@ -126,6 +142,8 @@ button:hover {
     margin: 0 0.8rem 4rem 0.8rem;
 }
 
+/* MAIN */
+
 .info > p {
     margin-bottom: 2.4rem;
 }
@@ -144,7 +162,7 @@ button:hover {
 @media (min-width: 640px) {
     main {
         display: flex;
-        margin-top: 6rem;
+        margin-top: 32px;
         justify-content: space-between;
     }
 
@@ -193,14 +211,16 @@ button:hover {
 
     .info {
         width: 50%;
-        padding: 8rem 6rem;
+        padding: 0 6rem;
     }
     .info > h1 {
         font-size: 6rem;
         text-align: left;
+        margin-top: 32px;
     }
     .info > p {
         font-size: 2.2rem;
         text-align: left;
+        padding: 0 5rem 0 0;
     }
 }
