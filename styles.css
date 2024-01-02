@@ -159,7 +159,72 @@ footer ul a:hover {
     color: #9fbfbd;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 720px) {
+    main {
+        display: flex;
+        margin-top: 32px;
+        justify-content: space-between;
+    }
+
+    /* LAYOUT */
+    
+    .app-container {
+        width: 90%;
+    }
+    .bg-mobile {
+        display: none;
+    }
+    .bg-desktop {
+        display: initial;
+        width: 90%;
+    }
+    
+    /* PICTURES*/
+    
+    .pic-logo {
+        width: 20%;
+    }
+    .pic-main {
+        width: 50%;
+        margin-bottom: 1.6rem;
+    }
+
+    /* BUTTONS */
+
+    .register-button {
+        margin: 0 0 4rem 0;
+        padding: 8px 40px;
+        font-size: 14px;
+    }
+
+    .social-buttons {
+        justify-content: end;
+    }
+
+    .social-buttons > .social-btn {
+        width: 4.4rem;
+        height: 4.4rem;
+        font-size: 3.2rem;
+    }
+
+    /* MAIN INFO */
+
+    .info {
+        width: 50%;
+        padding: 0 6rem;
+    }
+    .info > h1 {
+        font-size: 32px;
+        text-align: left;
+        margin-top: 32px;
+    }
+    .info > p {
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1200px) {
     main {
         display: flex;
         margin-top: 32px;
